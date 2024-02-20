@@ -23,8 +23,8 @@ public class 경로_표현식 {
 
 //        select m.username -> 상태 필드 단순히 값을 저장하기 위한 필드.
 //        from Member m
-//        join m.team t -> 단일 값 연관 필드   연관관계를 위한 필드.
-//        join m.orders o -> 컬렉션 값 연관 필드
+//        join m.team t -> 단일 값 연관 필드   연관관계를 위한 필드.  n:1
+//        join m.orders o -> 컬렉션 값 연관 필드 1:n 그닥.. 좀
 //        where t.name = '팀A
 
         EntityManagerFactory emf= Persistence.createEntityManagerFactory("hello");

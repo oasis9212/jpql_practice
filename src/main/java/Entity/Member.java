@@ -3,6 +3,12 @@ package Entity;
 import javax.persistence.*;
 
 @Entity
+
+// 정적 쿼리
+@NamedQuery(
+        name = "Member.findByname",
+        query = "select m from Member m.name = :username"
+)
 public class Member {
     @Id @GeneratedValue
     private Long id;
